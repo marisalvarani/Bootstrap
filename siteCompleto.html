@@ -15,14 +15,14 @@
       height: 50px;
     }
   </style>
-  <title>Olá, mundo!</title>
+  <title>Indie Music</title>
 </head>
 
-<body>
+<body class = "bg-secondary">
 
   <!--NavBar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand text-light" href="#">Indie</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
       aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
       <span class="navbar-toggler-icon"></span>
@@ -31,30 +31,33 @@
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+          <a class="nav-link text-light" href="#">Home <span class="sr-only">(página atual)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link text-light" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Rock</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Pop</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            Redes Sociais
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Ação</a>
-            <a class="dropdown-item" href="#">Outra ação</a>
+          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-light" href="#">Facebook</a>
+            <a class="dropdown-item text-light" href="#">Instagram</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Algo mais aqui</a>
+            <a class="dropdown-item text-light" href="#">LinkedIn</a>
           </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Desativado</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
       </form>
     </div>
   </nav>
@@ -70,16 +73,16 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100"
-          src="https://res.cloudinary.com/practicaldev/image/fetch/s--DtQ5czzK--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://dev-to-uploads.s3.amazonaws.com/i/vikgj9pssaffio4xbb7j.png"
+          src="https://i.ytimg.com/vi/FVDA6pObWJg/maxresdefault.jpg"
           alt="Primeiro Slide">
       </div>
       <div class="carousel-item">
         <img class="d-block w-100"
-          src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/103480911/original/f5aa8f3579b2c7c5756a038e922e9f12765616b8/fix-your-html-css-javascript-or-jquery-bugs.jpg"
+          src="https://i.ytimg.com/vi/Xpgj8xRy2yk/maxresdefault.jpg"
           alt="Segundo Slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="https://i.ytimg.com/vi/nOyc-SV50JE/maxresdefault.jpg" alt="Terceiro Slide">
+        <img class="d-block w-100" src="https://i.ytimg.com/vi/78-aYQU4Vs8/maxresdefault.jpg" alt="Terceiro Slide">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -94,10 +97,10 @@
   <!--/Carousel-->
 
   <!--Jumbotron-->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Fluid jumbotron</h1>
-      <p class="lead">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
+  <div class="jumbotron jumbotron-fluid bg-dark">
+    <div class="container text-light bg-dark">
+      <h1 class="display-4 ">Indie Music</h1>
+      <p class="lead">Indie rock, ou apenas "rock independente" em português, é um gênero musical surgido no Reino Unido e Estados Unidos, especialmente durante as décadas de 1970 a 1980. É enraizado em gêneros mais antigos, como o rock alternativo, o pós-punk e a new wave.</p>
     </div>
   </div>
   <!--/Jumbotron-->
@@ -105,93 +108,75 @@
 
   <!--Cards-->
   <div class="container">
-    <div class="card-columns">
+    <div class="card-deck">
       <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
+        <img class="card-img-top" src="http://static1.squarespace.com/static/56be3dd74d088e43fa92b83a/56c4da0ff85082d6a1a6edd5/5a7cbbbc53450a2455dafb54/1536781144299/VanceJoy_1080x1080_image_only.jpg?format=1500w" alt="Cantor Vance Joy">
         <div class="card-body">
-          <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-          <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a
-            um conteúdo adicional. Este conteúdo é um pouco maior.</p>
-        </div>
-      </div>
-      <div class="card p-3">
-        <blockquote class="blockquote mb-0 card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">
-            <small class="text-muted">
-              Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title">Título do card</h5>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um
-            conteúdo adicional.</p>
-          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-        </div>
-      </div>
-      <div class="card bg-primary text-white text-center p-3">
-        <blockquote class="blockquote mb-0">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-          <footer class="blockquote-footer">
-            <small>
-              Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </div>
-      <div class="card text-center">
-        <div class="card-body">
-          <h5 class="card-title">Título do card</h5>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um
-            conteúdo adicional.</p>
+          <h5 class="card-title">Vance Joy</h5>
+          <p class="card-text">James Gabriel Keogh, mais conhecido como Vance Joy, é um cantor e compositor australiano. Ele lançou o seu EP de estreia God Loves You When You're Dancing em março de 2013. Sua música "Riptide" alcançou o primeiro lugar no Triple J Hottest 100 de 2013. </p>
           <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
         </div>
       </div>
       <div class="card">
-        <img class="card-img" src=".../100px260/" alt="Imagem do card">
-      </div>
-      <div class="card p-3 text-right">
-        <blockquote class="blockquote mb-0">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">
-            <small class="text-muted">
-              Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-            </small>
-          </footer>
-        </blockquote>
+        <img class="card-img-top" src="https://bonsrapazes.com/wp-content/uploads/2020/06/twcc.jpg" alt="Banda Two Door Cinema Club">
+        <div class="card-body">
+          <h5 class="card-title">Two Door Cinema Club</h5>
+          <p class="card-text">Two Door Cinema Club é uma banda norte-irlandesa de rock. Formada em 2007, a banda é composta por Sam Halliday, Alex Trimble e Kevin Baird. Após lançarem a canção "Something Good Can Work" na internet, em 2009, a banda assinou com a gravadora francesa Kitsuné Music.</p>
+          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        </div>
       </div>
       <div class="card">
+        <img class="card-img-top" src="https://monkeybuzz.com.br/wp-content/uploads/2016/01/of-monsters-and-men-56a91db4eec4e.jpg" alt="Banda Of Monsters and Men">
         <div class="card-body">
-          <h5 class="card-title">Título do card</h5>
-          <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
-            conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em
-            ação.</p>
+          <h5 class="card-title">Of Monsters and Men</h5>
+          <p class="card-text">Of Monsters and Men é uma banda formada na Islândia de indie folk em 2010. Ela é composta pelos islandeses Nanna Bryndís Hilmarsdóttir, Ragnar "Raggi" Þórhallsson, Brynjar Leifsson, Arnar Rósenkranz Hilmarsson e Kristján Páll Kristjánsson.</p>
           <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
         </div>
       </div>
     </div>
+    
 
 
     <!--/Cards-->
 
+    <!--Imagens-->
+    <div class="container text-light mt-5 mb-5">
+      <h2 class="text-center">Trechos de músicas</h2>
+      <div class="row mt-5 mb-5">
+        <div class="col-md-6 mt-5 text-light">
+          <h5>"Oh, Saturday Sun, I met someone, don't care what it costs, no ray of sunlight is ever lost" - Saturday Sun, Vance Joy</h5>
+          <img class="card-img-top" width=300 height=400 src="https://www.vancejoy.com/sites/g/files/g2000007071/f/201804/041218_Desktop_CTA-Images_VIDEO_1.jpg" alt="Trecho da música Saturday Sun">        
+        </div>
+
+        <div class="col-md-6 mt-5 text-light">
+          <h5>"I had all and then most of you, some and now none of you, take me back to the night we met" - The Night We Met, Lord Huron</h5>
+          <img class="card-img-top" width=300 height=400 src="https://data.whicdn.com/images/342007546/original.jpg" alt="Trecho da música The Night We Met">        
+        </div>
+
+        <div class="col-md-6 mt-5 text-light">
+          <h5>"A beacon that is calling me, a light that never dies, reflections thrown above the sea, cast shadows in the sky" - Beacon, Two Door Cinema Club</h5>
+          <img class="card-img-top" width=300 height=300 src="https://c0.wallpaperflare.com/preview/927/388/968/aesthetics-grunge-vintager-etro.jpg" alt="Trecho da música Beacon">        
+        </div>
+
+        <div class="col-md-6 mt-5 text-light">
+          <h5>"Searching for some grace, I'll tell you now, if I could hear your voice, how sweet the sound" - Shine a Light, Banners</h5>
+          <img class="card-img-top" width=300 height=300 src="https://i.pinimg.com/originals/5d/37/91/5d379145fd2b9ab659f4a934d6e76a40.jpg" alt="Trecho da música Shine a Light">        
+        </div>
+      </div>
+    </div>
+
+    <!--/Imagens-->
+
     <!--Texto e Video-->
 
     <div class="row mt-5 mb-5">
-      <div class="col-md-6">
-        <h3>Texto teste</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil fuga deleniti deserunt laboriosam voluptas
-          mollitia consequatur possimus esse aperiam pariatur aspernatur repudiandae expedita neque libero quo, est et!
-          Magni, dolore.
+      <div class="col-md-6 text-light">
+        <h3>Indie Rock</h3>
+        <p>Você sabe o que é indie rock? Um dos subgêneros mais populares e comuns do rock na atualidade, é uma tendência entre jovens por lidar com temas acessíveis com uma sonoridade bastante agradável a eles. Por muito tempo, foi considerado um dos estilos que salvaram o rock e resgataram o estilo para o topo das paradas, tornando-o relevante novamente.
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ducimus in voluptatibus odit praesentium
-          soluta dolorum atque optio sequi magni nisi labore obcaecati ut repellat et recusandae omnis, nostrum
-          adipisci.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam iusto ipsum porro id impedit, omnis dicta,
-          vel non facere fuga, ab velit itaque suscipit tempora alias inventore fugiat quidem cumque!</p>
+        <h3>Indie Pop</h3>
+        <p>Indie pop é um gênero musical e subcultura que, em sua definição original, combina "pop de guitarra" com a ideologia ética Do it yourself, em oposição ao estilo e tom da música pop mainstream. O estilo é derivado do pós-punk britânico e teve origem no final da década de 1970.
+        </p>
       </div>
 
       <div class="col-md-6">
@@ -205,7 +190,7 @@
 
     <div class="row mb-5">
       <div class="col-md-12">
-        <h4 class="text-center">
+        <h4 class="text-center text-light">
           Entre em contato com a gente
         </h4>
       </div>
@@ -214,18 +199,23 @@
     <div class="row d-flex align-items-center">
       <div class="col-md-6">
         <form>
-          <div class="form-group">
+          <div class="form-group text-light">
+            <label for="exampleFormControlInput1">Nome</label>
+            <input type="text" class="form-control" id="nome" onkeyup='validaNome()'>
+          </div>
+
+          <div class="form-group text-light">
             <label for="exampleFormControlInput1">Endereço de email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+            <input type="email" class="form-control" id="email" onkeyup='validaEmail()' placeholder="nome@exemplo.com">
           </div>
          
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <div class="form-group text-light">
+            <label for="exampleFormControlInput1">Assunto</label>
+            <textarea class="form-control" id="assunto" rows="3" onkeyup="validaAssunto()"></textarea>
           </div>
 
           <div class="form-group d-flex justify-content-end">
-            <button class="btn btn-outline-success">Enviar</button>
+            <button class="btn btn-outline-light" onclick="enviar()">Enviar</button>
           </div>
         </form>
       </div>
@@ -255,14 +245,14 @@
             </a>
       
             <a href="https://www.instagram.com/" target="_blank" class="p-3">
-              <img class="tm-social" src="assets/img/instagram.png" alt="Logo do Intagram">
+              <img class="tm-social" src="assets/img/instagram.png" alt="Logo do Instagram">
             </a>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-12">
-          <p class="text-center">
+          <p class="text-center text-light">
             Todos os direitos reservados: Mari Salvarani &copy
           </p>
         </div>
@@ -276,10 +266,7 @@
   </div>
 
 
-
- 
-
-  <!-- JavaScript (Opcional) -->
+  
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -290,6 +277,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+
+    <!-- JavaScript (Opcional) -->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
